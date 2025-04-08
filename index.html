@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="360° Horizons-Bridging Cultures, Languages, and Domains in Video Comprehension">
+  <meta name="keywords" content="VideoVista, CulturalLingo">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>  VideoVista-CulturalLingo: 360° Horizons-Bridging Cultures, Languages, and Domains in Video Comprehension</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script> -->
+  <!-- <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+/Users/panlu/Library/Mobile Documents/com~apple~CloudDocs/ImageMath/visual-mathqa-server/data_final/images
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script> -->
+
+  <link rel="icon" href="./static/images/videovista.png">
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="stylesheet" href="./static/css/leaderboard.css">
+
+  <!-- <link href="https://unpkg.com/tabulator-tables@5.5.2/dist/css/tabulator_bulma.min.css" rel="stylesheet">
+  <script type="text/javascript" src="https://unpkg.com/tabulator-tables@5.5.2/dist/js/tabulator.min.js"></script> -->
+  <script type="text/javascript" src="static/js/sort-table.js" defer></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/explorer-index.js"></script>
+  <script src="./static/js/question_card.js"></script>
+
+  <script src="./static/js/leaderboard_testmini.js"></script>  
+  <!-- <script src="./data/results/output_folders.js" defer></script>
+  <script src="./data/results/model_scores.js" defer></script>
+
+  <script src="./visualizer/data/data_public.js" defer></script> -->
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <!-- <a class="navbar-item" href="https://keunhong.com">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a> -->
+      <!-- @PAN TODO: consider adding links? -->
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+            More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://uni-moe.github.io/">
+            <b>Uni-MoE</b> <p style="font-size:18px; display: inline; margin-left: 5px;"></p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+            </h1> -->
+            <h1 class="title is-1 publication-title is-bold">
+                <img src="static/images/videovista.png" style="width:1em;vertical-align: middle" alt="Logo"/>
+                <span class="videovista" style="vertical-align: middle">VideoVista-CulturalLingo</span>
+            </h1>
+          <h2 class="subtitle is-3 publication-subtitle">
+            360° Horizons-Bridging Cultures, Languages, and Domains in Video Comprehension
+            <!-- <br> -->
+            <!-- with GPT-4V, Bard, and Other Large Multimodal Models -->
+          </h2>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=vdhyjz4AAAAJ&hl=en">Xinyu Chen</a><sup style="color:#6f72bf;">1</sup>,</span>
+            <span class="author-block">
+              <a href="https://yunxinli.github.io/">Yunxin Li</a><sup style="color:#6f72bf;">1</sup>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?hl=en&user=N4L5o9UAAAAJ">Haoyuan Shi</a><sup style="color:#6f72bf;">1</sup>,</span>
+            <span class="author-block">
+              <a href="https://faculty.hitsz.edu.cn/hubaotian">Baotian Hu</a><sup style="color:#6f72bf;">1</sup>,</span>
+            <span class="author-block">
+              <a href="https://whluo.github.io/">Wenhan Luo</a><sup style="color:#ed4b82">2</sup>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=o_DllmIAAAAJ&hl=zh-CN">Yaowei Wang</a><sup style="color:#6f72bf;">1</sup>,</span>
+            <span class="author-block">
+              <a href="https://faculty.hitsz.edu.cn/MinZhang">Min Zhang</a><sup style="color:#6f72bf;">1</sup>,
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup style="color:#6f72bf;">1</sup>Harbin Institute of Technology, Shenzhen</span><br>
+            <span class="author-block"><sup style="color:#ed4b82">2</sup>Hong Kong University of Science and Technology</span>
+        </div>
+        
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <!-- @PAN TODO: change links -->
+                <a href="https://arxiv.org/pdf/2406.11303"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2406.11303"
+                   class="external-link button is-normal is-rounded is-dark">
+                <!-- <a href="https://lupantech.github.io/papers/arxiv23_mathvista.pdf"
+                   class="external-link button is-normal is-rounded is-dark"> -->
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/tree/master/VideoVista"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://huggingface.co/datasets/Uni-MoE/VideoVista"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <!-- <i class="far fa-images"></i> -->
+                      <p style="font-size:18px">🤗</p>
+                      <!-- 🔗 -->
+                  </span>
+                  <span>Dataset</span>
+                </a>
+              </span>
+              <!-- Visualization Link. -->
+              <!-- <span class="link-block">
+                <a href="https://mathvista.github.io/#visualization"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <p style="font-size:18px">🔮</p>
+                  </span>
+                  <span>Visualize</span>
+                </a>
+              </span> -->
+              <!-- Leaderboard Link. -->
+              <span class="link-block">
+                <a href="https://videovista.github.io/#leaderboard"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <p style="font-size:18px">🏆</p>
+                  </span>
+                  <span>Leaderboard</span>
+                </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="section">
+  <div class="container" style="margin-bottom: 2vh;">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Introduction</h2>
+        <div class="content has-text-justified">
+          <p>
+            Assessing the video comprehension capabilities of multimodal AI systems can effectively measure their understanding and reasoning abilities. Most video evaluation benchmarks are limited to a single language, typically English, and predominantly feature videos rooted in Western cultural contexts.
+
+            We introduce <b>VideoVista-CulturalLingo</b>, the first video evaluation benchmark designed to bridge cultural, linguistic, and domain divide in video comprehension. Our work differs from existing benchmarks in the following ways: 
+            1. <b>Cultural diversity</b>, incorporating cultures from China, North America, and Europe;
+            2. <b>Multi-linguistics</b>, with questions presented in Chinese and English—two of the most widely spoken languages; 
+            3. <b>Broad domain</b>, featuring videos sourced from hundreds of human-created domains. VideoVista-CulturalLingo contains 1,389 videos and 3,134 QA pairs, and we have evaluated 24 recent open-source or proprietary video large models.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+</div>
+</section>
+
+<section class="section">
+  <div class="container">
+    
+    <div class="columns is-centered">
+      <div class="column is-full has-text-centered content">
+        <!-- <h2 class="title is-3" id="leaderboard">Leaderboard</h2>
+        <div class="content">
+          <p class="mt-3">Accuracy scores on the VideoVista Dataset.</p>
+          <p> <b>Unders.</b>(Video Understanding Task); <b>Reason.</b>(Video Reasoning Task)</p>
+
+          <div id="leaderboard"></div>
+
+        </div> -->
+
+        <h2 class="title is-3" id="leaderboard">Leaderboard on VideoVista</h2>
+        <div class="content">
+          <p class="mt-3">Accuracy scores on the VideoVista Dataset.</p>
+          <p> <b>Unders.</b>(Video Understanding Task); <b>Reason.</b>(Video Reasoning Task)</p>
+
+          <table class="js-sort-table" id="results">
+            <tr>
+                <td class="js-sort-number"><strong>#</strong></td>
+                <td class="js-sort-number"><strong>Model</strong></td>
+                <td class="js-sort-number"><strong>LLM Params</strong></td>
+                <!-- <td class="js-sort-number"><strong>Source</strong></td> -->
+                <td class="js-sort-number"><strong>Frames</strong></td>
+                <!-- <td class="js-sort-number"><strong>Date</strong></td> -->
+                <td class="js-sort-number"><strong>Overall</strong></td>
+                <td class="js-sort-number"><strong>Event</strong></td>
+                <td class="js-sort-number"><strong>Object</strong></td>
+                <td class="js-sort-number"><strong>Culture</strong></td>
+                <td class="js-sort-number"><strong>Science</strong></td>
+            </tr>
+              <tr>
+                <td style="vertical-align: middle;">1</td>
+                <td style="text-align: left; padding: 2px 10px; vertical-align: middle;"><b class=""><a href="https://videovista.github.io/" class="ext-link" style="font-size: 16px; margin-left: 5px;">Human Performance
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">2024-08-27</td>
+                <td style="vertical-align: middle;"><b>90.24</b></td>
+                <td style="vertical-align: middle;">89.64</td>
+                <td style="vertical-align: middle;">92.30</td>
+              </tr>
+              
+          
+
+          <!-- <b>Human Performance*:</b> Average human performance from AMT annotators who have high school diplomas or above.
+          <br>
+          <b>Method types:</b> <b>MoE 🤖:</b> Mixture of Experts, <b>LMM 🖼️:</b> Large Multimodal Model, <b>Tool 🛠️:</b> Tool-augmented Large Language Model.
+          <br>
+          <b>Task types:</b> <b>FQA:</b> figure QA,
+          <b>GPS:</b> geometry problem solving,
+          <b>MWP:</b> math word problem,
+          <b>TQA:</b> textbook QA,
+          <b>VQA:</b> visual QA.
+          <br>
+          <b>Math reasoning types:</b> 
+          <b>ALG:</b> algebraic,
+          <b>ARI:</b> arithmetic,
+          <b>GEO:</b> geometry,
+          <b>LOG:</b> logical ,
+          <b>NUM:</b> numeric,
+          <b>SCI:</b> scientific,
+          <b>STA:</b> statistical.
+          <br>
+          <br>
+          <div>
+          <p>🚨 To submit your results to the leaderboard, please send to <a href="mailto:lupantech@gmail.com">this email</a> with your result json files.</p>
+          <p>🚨 For more submission details, please refer to <a href="https://github.com/lupantech/MathVista?tab=readme-ov-file#-leaderboard-">this link</a> and <a href="https://github.com/lupantech/MathVista?tab=readme-ov-file#-evaluations-on-mathvista">this link</a>.
+          </p>
+          </div> -->
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- DATASET SECTION -->
+<section class="hero is-light is-small">
+  <div class="hero-body has-text-centered">
+  <h1 class="title is-1 videovista">
+    <img src="static/images/videovista.png" style="width:1em;vertical-align: middle" alt="Logo"/>
+    <span class="videovista" style="vertical-align: middle">VideoVista</span>
+  </h1>
+  </div>
+</section>
+
+            
+<section class="section">
+  <div class="container">
+    <!-- <div class="columns is-centered m-6">
+      <div class="column is-full has-text-centered content">
+        <h2 class="title is-3">Examples</h2>
+        <p>One Example of </p>
+
+      </div>
+    </div> -->
+    <div class="columns is-centered m-6">
+      <div class="column is-full has-text-centered content">
+        <h2 class="title is-3">Statistics</h2>
+        <p>Notable statistics of <img src="static/images/videovista.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
+          <span class="mathvista">VideoVista</span></p>
+    
+      </div>
+    </div>
+    <div id="results-carousel" class="carousel results-carousel">  
+        <div class="columns is-centered">
+            <div class="column" style="margin-right: -20.5rem;">
+            <div class="content has-text-centered">
+                <img src="static/images/statistics.png" alt="data-statistics-table" style="max-width: 50%;"/>
+                <p> 
+                    Comprehensive statistics from different perspectives
+                </p> 
+            </div>
+            </div>
+            <div class="column">
+            <div class="content has-text-centered">
+                <img src="static/images/data_stastic.png" alt="data-stastic" style="max-width: 56%;"/>
+                <p>
+                    Detailed sample counts for each <i><b>Task Class</b></i>
+                </p>
+            </div>
+            </div>
+        </div>
+
+        <div class="columns is-centered">
+            <div class="column">
+                <div class="content has-text-centered" >
+                    <img src="static/images/Category.png" alt="video category" style="max-width: 70%;" />
+                    <p>The statistics of 14 video categories</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content has-text-centered">
+                    <img src="static/images/Time.png" alt="video durations" style="max-width: 70%;" />
+                    <p>The distribution of video durations</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- RESULTS SECTION -->
+<section class="hero is-light is-small">
+  <div class="hero-body has-text-centered">
+    <h1 class="title is-1 videovista">Experiment Results</h1>
+  </div>
+</section>
+
+<section class="section">
+    <div class="container">
+  
+      <div class="columns is-centered m-6">
+        <div class="column is-full has-text-centered content">
+          <h2 class="title is-3">Different Video Category</h2>
+            <div class="box m-5">
+              <div class="content has-text-centered">
+                <img src="static/images/Category_Result.png" alt="category" width="50%"/>
+                <p>
+                    Detailed analysis of Video-LLMs: 
+                    <span style="color: rgb(219, 90, 109);">GPT-4o</span>,
+                    <span style="color: rgb(0 ,79, 152);">Gemini-1.5-Flash</span>,
+                    <span style="color: forestgreen;">LLaMA-VID</span>,
+                    <span style="color: orange;">VideoChat2-Mistral</span>
+
+                
+                </p> 
+                <p>The category use abbreviations: Howto & Style <b>(H&S)</b>, News & Politics <b>(N&P)</b>, Pets & Animals <b>(P&A)</b>, Autos & Vehicles <b>(A&E)</b>, Gaming <b>(Gam.)</b>, Film & Animation <b>(F&A)</b>, Sports <b>(Spo.)</b>, Entertainment <b>(ENT.)</b>, People & Blogs <b>(P&B)</b>, Travel & Events <b>(T&E)</b>, Comedy <b>(Com.)</b>, Science & Technology <b>(S&T)</b>, Education <b>(Edu.)</b>, Music <b>(Mus.)</b>.</p>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="columns is-centered m-6">
+        <div class="column is-full has-text-centered content">
+          <h2 class="title is-3">Different Video Duration</h2>
+            <div class="box m-5">
+              <div class="content has-text-centered">
+                <img src="static/images/Duration_Result.png" alt="category" width="50%"/>
+                <p>
+                    Detailed analysis of Video-LLMs: 
+                    <span style="color: rgb(219, 90, 109);">GPT-4o</span>,
+                    <span style="color: rgb(0 ,79, 152);">Gemini-1.5-Flash</span>,
+                    <span style="color: forestgreen;">LLaMA-VID</span>,
+                    <span style="color: orange;">VideoChat2-Mistral</span>
+
+                
+                </p> 
+                <p>The duration: 0-60s <b>(Tiny)</b>, 60-120s <b>(Short)</b>, 120-300s <b>(Med.)</b>, 300-600s <b>(Long)</b>, 600s+ <b>(Huge)</b></b>.</p>
+              </div>
+            </div>
+        </div>
+      </div>
+  
+
+  
+    </div>
+</section>
+
+
+<!-- @PAN TODO: bibtex -->
+<!-- <section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title is-3 has-text-centered">BibTeX</h2>
+    <pre><code>@misc{li2024videovista,
+        title={VideoVista: A Versatile Benchmark for Video Understanding and Reasoning}, 
+        author={Yunxin Li and Xinyu Chen and Baotian Hu and Longyue Wang and Haoyuan Shi and Min Zhang},
+        year={2024},
+        eprint={2406.11303},
+        archivePrefix={arXiv}
+}</code></pre>
+  </div>
+</section> -->
+<section class="hero is-light is-small">
+    <div class="hero-body has-text-centered">
+      <h1 class="title is-1 mathvista_other" id="citation">Citation</h1>
+    </div>
+  </section>
+  
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <pre><code>@misc{li2024videovista,
+        title={VideoVista: A Versatile Benchmark for Video Understanding and Reasoning}, 
+        author={Yunxin Li and Xinyu Chen and Baotian Hu and Longyue Wang and Haoyuan Shi and Min Zhang},
+        year={2024},
+        eprint={2406.11303},
+        archivePrefix={arXiv}
+}</code></pre>
+    </div>
+  </section>
+
+<footer class="footer">
+  <!-- <div class="container"> -->
+    <div class="content has-text-centered">
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is website adapted from <a href="https://nerfies.github.io/">Nerfies</a> and <a href="https://mathvista.github.io/">MathVista</a>, licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  <!-- </div> -->
+</footer>
+
+</body>
+</html>
